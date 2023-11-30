@@ -1,6 +1,8 @@
 html {
     scroll-snap-type: y mandatory;
+
     scroll-behavior: smooth;
+    
 }
 * {
     padding: 0;
@@ -21,7 +23,10 @@ a {
 
 section{
     height: 100vh;
-    scroll-snap-align:center
+    width: 100vw;
+    scroll-snap-align:center;
+    //滾動完會置中
+    overflow:hidden;
 }
 
 @mixin mobile{
@@ -39,15 +44,3 @@ section{
         @content;
     }
 }
-// .course{
-//     height: 100vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-// .box{
-//     width: 200px;
-//     height: 200px;
-//     background-color: white;
-    
-// }

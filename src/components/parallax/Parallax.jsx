@@ -25,7 +25,6 @@ const Parallax = ({ type }) => {
       </motion.h1>
       <motion.div className="moutains"></motion.div>
       <motion.div
-        
         className="planets"
         style={{
           y: yBg,
@@ -35,6 +34,7 @@ const Parallax = ({ type }) => {
         }}
       ></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      {/* 星星在滾動 */}
     </div>
   );
 };

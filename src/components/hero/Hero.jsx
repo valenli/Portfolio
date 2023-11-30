@@ -32,7 +32,7 @@ const sliderVariants = {
 
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -62,20 +62,20 @@ const Hero = () => {
             variants={textVariants}
             animate="scrollButton"
             src="/scroll.png"
-            alt=""
           />
         </motion.div>
       </div>
-      <motion.div 
+      {/* <motion.div 
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Writer Content Creator Influencer
-      </motion.div>
+      </motion.div> */}
+      {/* --此段背景跑馬燈會影響上面按鈕-- */}
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero.png" />
       </div>
     </div>
   );

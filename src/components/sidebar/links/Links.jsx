@@ -4,6 +4,7 @@ const variants = {
   open: {
     transition: {
       staggerChildren: 0.1,
+      //出現下一個item的速度
     },
   },
   closed: {
@@ -13,7 +14,6 @@ const variants = {
     },
   },
 };
-
 const itemVariants = {
   open: {
     y: 0,
@@ -24,7 +24,6 @@ const itemVariants = {
     opacity: 0,
   },
 };
-
 const Links = () => {
   const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
   return (
@@ -35,7 +34,9 @@ const Links = () => {
           key={item}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
+          //滑過去時會放大
           whileTap={{ scale: 0.95 }}
+          //點擊放大
         >
           {item}
         </motion.a>
